@@ -112,6 +112,12 @@ nav ul li a:hover {
   position:relative;
 }
 
+#slides {
+  width: 100%;
+  height: 360px;
+  overflow-x: hidden;
+}
+
 #signup {
   width:auto;
   height:70px;
@@ -235,12 +241,11 @@ footer {
   position:relative;
   clear:both;
   width:auto;
-  height:50px;
-  background:#333333;
+  height:80px;
+  background:#1D1D1D;
 }
 
 #copyright {
-  background: #1D1D1D;
   height:70px;
   position:absolute;
   bottom:0;
@@ -290,4 +295,77 @@ footer {
 .social img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+@media all and (max-width: 980px) {
+  header p {
+    margin-right: 40px;
+  }
+
+  #signup {
+    text-align: right;
+    position: static;
+  }
+
+  #signup p {
+    display: inline-block;
+    margin-left: auto;
+    position: static;
+    font-size: 80%;
+  }
+
+  #signup .signup {
+    margin-top:15px;
+    margin-right: 20px;
+    display: inline-block;
+    position: static;
+  }
+
+  input[type=email] {
+    width: 200px;
+  }
+
+  #how_we_work, #portfolio, #copyright {
+    width: 90%;
+  }
+
+  #how_we_work article {
+    margin: 0 auto;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  #how_we_work article:nth-last-of-type(1) {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  #portfolio {
+    text-align: center;
+  }
+
+  #portfolio h2{
+    text-align: left;
+  }
+
+  #portfolio .img-item {
+    margin: 0 auto;
+    vertical-align: top;
+    width: 45%;
+    box-sizing: border-box;
+    float: none;
+    display: inline-block;
+  }
+
+  #portfolio figcaption {
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  #copyright {
+    margin: 0 auto;
+    position: static;
+  }
 }
