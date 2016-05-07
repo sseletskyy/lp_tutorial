@@ -1,6 +1,8 @@
 .hidden {
   position: absolute;
   clip:rect(1px, 1px, 1px, 1px);
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -49,7 +51,6 @@ strong{
 }
 
 header {
-  position:relative;
   width:auto;
   max-width:900px;
   margin: 0 auto 20px auto;
@@ -72,6 +73,12 @@ header p {
 
 nav ul {
   list-style:none;
+}
+
+nav ul::after {
+  clear: both;
+  content: "";
+  display:block;
 }
 
 nav ul li {
@@ -160,7 +167,7 @@ nav ul li a:hover {
   padding:70px 0 45px 0;
 }
 
-#how_we_work h2 {
+section h2 {
   margin: 35px 0 35px 0;
   font-size: 36px;
   color: #e56038;
@@ -211,12 +218,12 @@ nav ul li a:hover {
   margin:0 auto;
 }
 
-#portfolio h2 {
+/*#portfolio h2 {
   font-size:20px;
   border-bottom: 1px solid #D6D0C1;
   padding: 20px 0;
   margin-bottom: 20px;
-}
+}*/
 
 #portfolio .img-item {
   float:left;
@@ -360,16 +367,66 @@ footer {
     padding-bottom: 30px;
   }
 
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
 
+  nav ul li {
+    padding: 10px 15px 10px 0px;
+  }
 
+  section#signup {
+    padding: 0 5%;
+  }
 
+  #signup .signup {
+    margin-right: 0px;
+  }
 
+  section#how_we_work, #portfolio, #copyright {
+    width: 90%;
+    margin: 0 auto;
+  }
 
+  section#how_we_work article {
+    padding-left: 0px;
+  }
 
+  #copyright {
+    position: static;
+  }
 
+}
 
+@media all and (max-width: 550px){
+  #how_we_work article, #how_we_work article:last-of-type {
+    width: 100%;
+    padding: 10px 0px;
+  }
 
+  #portfolio article.img-item, #portfolio article figcaption {
+    width: 100%;
+  }
 
+}
+
+/* signup form */
+@media all and (max-width:750px) {
+  #signup {
+    height: auto;
+    text-align: center;
+  }
+
+  #signup p {
+    display: block;
+    margin: 0px;
+    padding-top: 20px;
+  }
+
+  #signup .signup {
+    padding-bottom: 20px;
+  }
 
 
 }
