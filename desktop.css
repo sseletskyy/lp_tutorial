@@ -398,35 +398,3 @@ footer {
   }
 
 }
-
-@media all and (max-width: 550px){
-  #how_we_work article, #how_we_work article:last-of-type {
-    width: 100%;
-    padding: 10px 0px;
-  }
-
-  #portfolio article.img-item, #portfolio article figcaption {
-    width: 100%;
-  }
-
-}
-
-/* signup form */
-@media all and (max-width:750px) {
-  #signup {
-    height: auto;
-    text-align: center;
-  }
-
-  #signup p {
-    display: block;
-    margin: 0px;
-    padding-top: 20px;
-  }
-
-  #signup .signup {
-    padding-bottom: 20px;
-  }
-
-
-}
