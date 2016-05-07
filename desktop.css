@@ -75,17 +75,17 @@ nav ul {
   list-style:none;
 }
 
-nav ul::after {
-  clear: both;
-  content: "";
-  display:block;
-}
-
 nav ul li {
-  display:block;
-  float:left;
+  display:inline-block;
+  /*float:left;*/
   padding:10px 15px;
 }
+
+/*nav ul::after {
+  clear:both;
+  content: "";
+  display: block;
+}*/
 
 nav ul li a {
   font-family: 'Open Sans', sans-serif;
@@ -396,5 +396,72 @@ footer {
   #copyright {
     position: static;
   }
+
+}
+
+@media all and (max-width: 550px) {
+
+  header h1{
+    font-size: 36px;
+    text-align: center;
+  }
+
+  #how_we_work article, #how_we_work article:last-of-type {
+    width: 100%;
+    padding-left: 0px;
+    padding-bottom: 30px;
+  }
+
+  #portfolio article.img-item, #portfolio article figcaption  {
+    width: 100%;
+  }
+
+  .container article {
+    font-size: 80%;
+    left: 5%;
+  }
+
+
+}
+/* signup form */
+@media all and (max-width: 750px) {
+
+  #signup {
+    text-align: center;
+    height: auto;
+  }
+
+  #signup p {
+    display: block;
+    margin-top: 0px;
+    padding-top: 15px;
+    font-size: 100%;
+  }
+
+  #signup .signup {
+    margin: 15px 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
